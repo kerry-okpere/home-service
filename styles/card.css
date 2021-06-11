@@ -19,7 +19,7 @@
 .card_action{
   margin: 1.25rem .5rem 1rem;
   display: flex;
-  align-items: flex-end;
+  align-items: stretch;
   justify-content: space-between;
 }
 .card_action-phone{
@@ -30,11 +30,14 @@
   width: 45%;
 }
 .card_action-btn{
-  display: inline-block;
-  padding: .75rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   margin-top: 1rem;
   margin-bottom: .75rem;
+  height: 40px;
+  width: 40px;
   box-shadow: 0 15px 20px 0 rgba(0,0,0, 0.1);
 }
 .card_action-btn-phone{
