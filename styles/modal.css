@@ -5,16 +5,14 @@
 .modal{
   position: fixed;
   z-index: 10;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0,0,0,0.9) !important; 
   inset: 0;
   overflow: auto;
 }
 .modal_content{
   background-color: var(--white);
-  position: fixed;
-  bottom: 0px; right: 0; left: 0;
+  width: 100% !important;
 }
-/* for modal with activity button */
 .modal_content .activity{
   margin: 0;
   margin-top: -1.25rem;
@@ -27,15 +25,6 @@
   border-bottom-left-radius: 0rem;
   border-top-left-radius: 20px;
 }
-.modal_list{
-  display: none;
-  font-family: "Cerebri Sans";
-  font-weight: 100;
-}
-.modal_content .modal_list{
-  display: block;
-}
-/*  */
 .modal_img{
   border-radius: 15px;
   display: inline-block;
@@ -45,6 +34,15 @@
   background-repeat: no-repeat;
 }
 .modal_list{
+  max-height: 0px;
+  overflow: hidden;
+  background-color: var(--white);
+  font-family: "Cerebri Sans";
+  font-weight: 100;
+  transition: max-height 0.4s ease-out;
+}
+.modal_list-show{
+  max-height: 500px;
   padding: .5rem 1.5rem 3rem;
 }
 .modal_list li{
