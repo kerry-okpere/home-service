@@ -1,0 +1,200 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/index.css">
+  <title>Document</title>
+</head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav_link">
+          <li class="nav_link-item nav_link-item-active">
+            <a href="#">
+              <img src="./img/calendar-range.png" alt="calendar icon">
+              <span>Schedule</span>
+            </a>
+          </li>
+          <li class="nav_link-item">
+            <a href="#">
+              <img src="./img/history.png" alt="history icon">
+              <span>History</span>
+            </a>
+          </li>
+          <li class="nav_link-item">
+            <a href="#">
+              <img src="./img/md-notifications-outline.png" alt="notification icon">
+              <span>Notifications</span>
+            </a>
+          </li>
+          <li class="nav_link-item">
+            <a href="#">
+              <img src="./img/message-text-outlinemessage.png" alt="message icon">
+              <span>Chat</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user">
+        <img class="user_img" src="./img/Silm_Momoh_lfuyi2-removebg-preview.png" alt="Silm_Momoh avatar">
+        <p class="user_txt">
+          Good Morning
+          <span>Slim</span>!
+        </p>
+      </div>
+    </header>
+    <main>
+      <div class="intro">
+        <h1 class="intro_title">Schedule</h1>
+        <button class="intro_btn">Reconfigure Services</button>
+      </div>
+
+      <section class="activity_grp">
+        <div class="activity activity-success">
+          <div class="activity_txt">
+            <p>Your account is inactive.
+              <strong class="activity_txt-bold">15% off</strong>
+               offer until June 23.
+            </p>
+          </div>
+          <button class="activity_action">
+            <span class="activity_action-alt">N75,000</span>
+            <span>Pay N62,800</span>
+          </button>
+        </div>
+        <div id="modal" class="activity_modal">
+          <div id="content" class="activity_modal-content ">
+            <div class="activity activity-accent">
+              <div class="activity_txt">
+                <h2 id="title" class="activity_title">Today's Meal</h2>
+                <p id="text">View your meals for the week.</p>
+              </div>
+              <button class="activity_action activity_action-show" id="button">
+                <img class="activity_action-cancel" src="./img/close.png" alt="close icon"/>
+                <span id="button_text">Check ‘em</span>
+              </button>
+            </div>
+            
+            <ul class="modal_list">
+              <li>
+                <div class="modal_img"></div>
+                <div>
+                  <p class="modal_food-title">Akara & Pap</p>
+                  <p class="modal_food-sub">Carbohydrate</p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img"></div>
+                <div>
+                  <p class="modal_food-title">Jollof Rice</p>
+                  <p class="modal_food-sub">Protein</p>
+                </div>
+              </li>
+              <li class="modal_list-item">
+                <div class="modal_img"></div>
+                <div>
+                  <p class="modal_food-title">Gastonton</p>
+                  <p class="modal_food-sub">Carbohydrate</p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img"></div>
+                <div>
+                  <p class="modal_food-title">Port Domenic</p>
+                  <p class="modal_food-sub">Carbohydrate</p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img"></div>
+                
+                <div>
+                  <p class="modal_food-title">Carleeville</p>
+                  <p class="modal_food-sub">Fat & Oils</p>
+                </div>
+              </li>
+              <li>
+                <div class="modal_img"></div>
+                <div>
+                  <p class="modal_food-title">South Chesleyton</p>
+                  <p class="modal_food-sub">Carbohydrate</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <section class="card">
+        <h2 class="card_title">Getting Started</h2>
+        <p class="card_txt">
+          Let’s answer any questions you have left!
+        </p>
+        <div class="card_action">
+          <div class="card_action-phone">
+            <div class="card_action-btn card_action-btn-phone">
+              <img class="card_action-phone-icon" src="./img/phone.png" alt="phone icon">
+            </div>
+            <p class="card_action-txt">Set up a call with your gardener</p>
+            <button class="card_action-cta">
+              Do it <img src="./img/arrow-purple.png" alt="arrow icon">
+            </button>
+          </div>
+          <div class="card_action-play">
+            <div class="card_action-btn card_action-btn-play">
+              <img class="card_action-play-icon" src="./img/play.png" alt="play icon">
+            </div>
+            <p class="card_action-txt"> Lose yourself to this video </p>
+            <button class="card_action-cta">
+              Play <img src="./img/arrow-accent.png" alt="arrow icon">
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="timeline">
+          <div>
+            <p class="timeline_date">Tomorrow</p>
+            <div class="timeline_detail">
+              <p class="timeline_detail-time">9 - 10am</p>
+              <div class="timeline_detail-info">
+                <p>
+                  Your cleaner is coming in to give your apartment the looks.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <p class="timeline_date">Friday, July 27</p>
+            <div class="timeline_detail">
+              <p class="timeline_detail-time">3 -5pm</p>
+              <div class="timeline_detail-info">
+                <p>
+                  Winter? We’re getting your AC fixed
+                </p>
+              </div>
+            </div>
+
+            <div class="timeline_detail">
+              <p class="timeline_detail-time">9 - 10am</p>
+              <div class="timeline_detail-info">
+                <p>
+                  Your cleaner came in to give your apartment the looks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="modal modal_food" tabindex="0">
+        <div class="food"></div>
+      </section>
+    </main>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
