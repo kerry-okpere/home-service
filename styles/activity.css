@@ -28,6 +28,7 @@
   font-size: var(--font-14);
   width: 45%;
   transition: width 5s ;
+  margin: 0;
 }
 .activity_txt{
   font-weight: 100;
