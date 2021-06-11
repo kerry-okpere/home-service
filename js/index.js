@@ -12,6 +12,8 @@ const buttonTitle = document.getElementById('text')
 const closeIcon = document.querySelector('.activity_action-cancel')
 const buttonText = document.getElementById('button_text')
 
+const card = document.querySelector('.card')
+
 let boundTop
 const width = menuContent.getBoundingClientRect().width
 const menuContentTop = menuContent.getBoundingClientRect().y
@@ -47,6 +49,12 @@ const handleMenu = (menu) => {
   buttonText.style.display = menu.buttonText ? 'block' : 'none'
   closeIcon.style.display = menu.closeIcon ? 'block' : 'none'
 
+  console.log(card.style.marginTop)
+  setTimeout(() => {
+    card.style.marginTop = menu.placeholder ? '108px' : '1.5em'
+  }, 400)
+  
+
   boundTop = food.getBoundingClientRect().y
 }
 
@@ -57,6 +65,7 @@ const showFoodMenu = (e) => {
     menu.title = false
     menu.buttonText = true
     menu.closeIcon = false
+    menu.placeholder = false
     handleMenu(menu)
   }else{
     menu.action = 'add'
@@ -64,6 +73,7 @@ const showFoodMenu = (e) => {
     menu.title = true
     menu.buttonText = false
     menu.closeIcon = true
+    menu.placeholder = true
     setTimeout(() => { handleMenu(menu) }, 0)
     menuContent.style.marginTop = '224px'
   }

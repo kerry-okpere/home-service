@@ -14,8 +14,8 @@
   align-items: center
 }
 .activity_modal-content{
-  transition: width .3s;
-
+  transition: width .4s;
+  width: 87.5vw
 }
 .activity_action{
   font-family: "Cerebri Sans";
@@ -86,4 +86,11 @@
   height: 25px;
   display: none;
   margin: 0 auto;
+}
+
+@media (min-width: 440px) { 
+  
+  .activity_modal-content {
+    width: 400px;
+  }
 }
