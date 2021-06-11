@@ -1,0 +1,64 @@
+.activity{
+  display: flex;
+  margin: 1.25rem 0;
+  min-height: 70px;
+}
+.activity_action{
+  font-family: "Cerebri Sans";
+  border: none;
+  padding: 1rem 1.25rem;
+  border-bottom-right-radius: .5rem;
+  border-top-right-radius: .5rem;
+  color: var(--white);
+  font-weight: bold;
+  font-size: var(--font-14);
+  width: 45%;
+  transition: width 5s ;
+}
+.activity_txt{
+  font-weight: 100;
+  padding: 1rem;
+  width: 55%;
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+.activity_txt p{
+  font-family: "Cerebri Sans";
+  font-weight: 100;
+  font-size: var(--font-14);
+  line-height: 20px;
+}
+.activity_txt-bold{
+  font-weight: bold;
+}
+.activity_action-alt{
+  text-decoration: line-through;
+  font-family: "Cerebri Sans";
+  font-weight: 100;
+  display: block;
+}
+.activity-success .activity_txt{
+  background-color: var(--green-200);
+}
+.activity-success .activity_action{
+  background-color: var(--green);
+}
+
+.activity-accent .activity_txt{
+  background-color: var(--accent-100);
+}
+.activity-accent .activity_action{
+  background-color: var(--accent-200);
+}
+
+.activity_title{
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: .25rem;
+  display: none;
+}
+.activity_action-cancel{
+  height: 25px;
+  display: none;
+  margin: 0 auto;
+}

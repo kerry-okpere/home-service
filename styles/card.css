@@ -1,0 +1,78 @@
+.card{
+  background-color: var(--blue-400);
+  border-radius: .5rem;
+  padding: 1.5rem;
+  margin: 2em auto;
+  max-width: 300px;
+}
+.card_title{
+  font-size: 17px;
+  font-weight: 600;
+}
+.card_txt{
+  font-family: "Cerebri Sans";
+  font-size: var(--font-14);
+  font-weight: 100;
+  margin-top: .75rem;
+  margin-bottom: 1rem;
+}
+.card_action{
+  margin: 1.25rem .5rem 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.card_action-phone{
+  margin-right: -1rem;
+  width: 45%;
+}
+.card_action-play{
+  width: 45%;
+}
+.card_action-btn{
+  display: inline-block;
+  padding: .75rem;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-bottom: .75rem;
+  box-shadow: 0 15px 20px 0 rgba(0,0,0, 0.1);
+}
+.card_action-btn-phone{
+  background-color: var(--purple-100);
+}
+.card_action-btn-play{
+  background-color: var( --red-200);
+}
+.card_action-play-icon{
+  padding: .1rem 0 .1rem .1rem;
+}
+.card_action-play-icon, .card_action-phone-icon{
+  width: 19.39px;
+  height: 17.33px
+}
+.card_action-txt{
+  font-size: var(--font-14);
+  font-weight: 100;
+  line-height: 20px;
+  font-family: "Cerebri Sans";
+}
+.card_action-cta{
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  padding: 0 0;
+  margin-top: .75rem;
+  font-family: "Cerebri Sans";
+  font-weight: normal;
+}
+.card_action-cta img{
+  width: var(--font-14);
+  height: 9px;
+  margin-left: .25rem;
+}
+.card_action-btn-phone ~ .card_action-cta{
+  color: var(--purple);
+}
+.card_action-btn-play ~ .card_action-cta{
+  color: var(--red);
+}

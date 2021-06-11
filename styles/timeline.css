@@ -1,0 +1,33 @@
+.timeline_date{
+  color: var(--green);
+  font-size: var(--font-17);
+  margin: 1rem 0;
+}
+.timeline_detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem 0;
+  font-family: "Cerebri Sans";
+}
+.timeline_detail-time{
+  font-weight: normal;
+  font-size: var(--font-12);
+}
+.timeline_detail-info{
+  background-color: var(--blue-400);
+  border-radius: .5rem;
+  padding: .75rem;
+  max-width: 300px;
+  width: 75%;
+}
+.timeline_detail-info p{
+  font-weight: 100;
+  font-size: var(--font-15);
+  line-height: 20px;
+}
+
+.timeline, .activity_grp, .user, .intro{
+  max-width: 400px;
+  margin: 0 auto;
+}

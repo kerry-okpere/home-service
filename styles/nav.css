@@ -1,0 +1,41 @@
+.nav{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding: 1.25rem 0;
+  background-color: rgba(244,244,244,0.75);
+}
+.nav_link{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  max-width: 450px;
+  margin: 0 auto;
+}
+.nav_link-item{
+  width: 20%;
+}
+.nav_link-item a {
+  text-decoration: none;
+  color: var(--black-400);
+  font-size: var(--font-12);
+  transition: color 0.3s ease-in;
+  font-family: "Cerebri Sans";
+  font-weight: normal;
+}
+.nav_link-item a:hover{
+  color: var(--green);
+}
+.nav_link-item a img, .nav_link-item a span{
+  text-align: center;
+  display: block;
+}
+.nav_link-item a img{
+  text-align: center;
+  margin: 0 auto .5rem;
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}

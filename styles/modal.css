@@ -1,0 +1,108 @@
+@import url('./font.css');
+@import url('./variable.css');
+
+.modal{
+  position: fixed;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.9);
+  inset: 0;
+  /* display: none; */
+  overflow: auto;
+}
+.modal_content{
+  background-color: var(--white);
+  position: fixed;
+  bottom: 0px; right: 0; left: 0;
+  /* display: none; */
+}
+/* for modal with activity button */
+.modal_content .activity{
+  margin: 0;
+  margin-top: -1.25rem;
+}
+.modal_content .activity_action{
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 20px;
+}
+.modal_content .activity_txt{
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 20px;
+}
+.modal_list{
+  display: none;
+  font-family: "Cerebri Sans";
+  font-weight: 100;
+}
+.modal_content .modal_list{
+  display: block;
+}
+/*  */
+.modal_img{
+  border-radius: 15px;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 1.25rem;
+}
+.modal_list{
+  padding: .5rem 1.5rem 3rem;
+}
+.modal_list li{
+  display: flex;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+li:nth-child(-n+3) .modal_img{
+  background-size: 100px;
+}
+li:nth-child(n+3) .modal_img{
+  background-size: 100px, cover;
+}
+li:nth-child(1) .modal_img{
+  background-image: url('../img/Akara-pap.png');
+  background-color: var(--blue-600);
+}
+li:nth-child(2) .modal_img{
+  background-color: var(--red-300);
+  background-image: url('../img/jollof.png');
+}
+li:nth-child(3) .modal_img{
+  background-image: url('../img/spag.png');
+  background-color: var(--blue-600);
+}
+li:nth-child(4) .modal_img{
+  background-image: url('../img/port-domenic.png'), url('../img/Rectangle.png');
+}
+li:nth-child(5) .modal_img{
+  background-image: url('../img/carleeville.png'), url('../img/Rectangle-1.png');
+}
+li:nth-child(6) .modal_img{
+  background-image: url('../img/south-chesleyton.png'), url('../img/Rectangle-2.png');
+}
+.modal_food-title{
+  font-size: var(--font-18);
+  color: var(--black-400);
+  line-height: 25px;
+}
+.modal_food-sub{
+  font-size: var(--font-15);
+  color: var(--gray);
+  line-height: 25px;
+}
+
+.food{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--blue-600);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 520px;
+}
+.modal_food{
+  display: none;
+}

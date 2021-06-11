@@ -1,0 +1,16 @@
+.user{
+  display: flex;
+  align-items: center;
+  padding-bottom: .5rem;
+}
+.user_img{
+  border-radius: 50% ;
+  width: 2.25rem;
+  height: 2.25rem;
+  background-color: var(--red-100);
+  margin-right: .75rem;
+}
+.user_txt{
+  font-size: var(--font-17);
+  font-weight: 100;
+}
