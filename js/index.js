@@ -16,10 +16,6 @@ let boundTop
 const width = menuContent.getBoundingClientRect().width
 const menuContentTop = menuContent.getBoundingClientRect().y
 
-// menuContent.style.width = `${width}px`
-
-menuContent.style.width = '400px'
-
 const menu = {
   action: '',
   buttonTitle: true,
@@ -69,8 +65,6 @@ const showFoodMenu = (e) => {
     menu.buttonText = false
     menu.closeIcon = true
     setTimeout(() => { handleMenu(menu) }, 0)
-    // menuContent.style.marginTop = `${menuContentTop}px`
-
     menuContent.style.marginTop = '224px'
   }
 }
