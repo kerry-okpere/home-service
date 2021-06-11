@@ -15,6 +15,7 @@
 }
 .activity_modal-content{
   transition: width .3s;
+
 }
 .activity_action{
   font-family: "Cerebri Sans";
@@ -68,6 +69,10 @@
 }
 .activity-accent .activity_action{
   background-color: var(--accent-200);
+}
+.activity-accent{
+  width: 100%;
+  transition: width .35s;
 }
 
 .activity_title{
