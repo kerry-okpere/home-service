@@ -13,8 +13,8 @@ const closeIcon = document.querySelector('.activity_action-cancel')
 const buttonText = document.getElementById('button_text')
 
 let boundTop
-let width = menuContent.getBoundingClientRect().width
-let menuContentTop = menuContent.getBoundingClientRect().y
+const width = menuContent.getBoundingClientRect().width
+const menuContentTop = menuContent.getBoundingClientRect().y
 
 menuContent.style.width = `${width}px`
 
