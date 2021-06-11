@@ -1,6 +1,6 @@
 const foodItem = document.querySelector('.modal_list-item')
-const foodModal = document.querySelector('.modal_food')
-const food = document.querySelector('.food')
+const foodModal = document.getElementById('food-modal')
+const food = document.getElementById('food')
 
 const menuButton = document.getElementById('button')
 const menuModal = document.getElementById('modal')
@@ -11,6 +11,8 @@ const buttonTitle = document.getElementById('text')
 const closeIcon = document.querySelector('.activity_action-cancel')
 const buttonText = document.getElementById('button_text')
 
+let boundTop;
+
 const menu = {
   action: '',
   buttonTitle: true,
@@ -18,18 +20,6 @@ const menu = {
   buttonText: true,
   closeIcon: false,
 }
-const showFoodModal = (e) => {
-  foodModal.style.display = 'block'
-  food.style.backgroundImage = 'url("../img/spag.png")'
-}
-
-const hideFoodModal = (e) => {
-  if( e.target !== foodModal ) {
-    return;
-  }
-  foodModal.style.display = 'none'
-}
-
 const handleMenu = (menu) => {
   menuModal.classList[menu.action]('modal')
   menuContent.classList[menu.action]('modal_content')
@@ -39,6 +29,7 @@ const handleMenu = (menu) => {
 
   buttonText.style.display = menu.buttonText ? 'block' : 'none'
   closeIcon.style.display = menu.closeIcon ? 'block' : 'none'
+  boundTop = food.getBoundingClientRect().y;
 }
 const showFoodMenu = (e) => {
   if(menuModal.classList.contains('modal')){
@@ -57,6 +48,29 @@ const showFoodMenu = (e) => {
     setTimeout(() => { handleMenu(menu) }, 0)
   }
 }
+
+const showFoodModal = (e) => {
+  food.style.top = boundTop
+  food.style.position = 'relative'
+  foodModal.classList.add('modal')
+  food.classList.add('food_gastonton')
+}
+
+const hideFoodModal = (e) => {
+  if( e.target !== foodModal ) {
+    return;
+  }
+  setTimeout(function() {
+    food.className = 'modal_img'
+    food.classList.remove('food_gastonton');
+  }, 0); 
+
+  setTimeout(function() {
+    foodModal.classList.remove('modal')
+    food.style.position = 'initial'
+  }, 400);
+}
+
 
 menuButton.onclick = showFoodMenu
 

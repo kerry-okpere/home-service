@@ -1,19 +1,18 @@
 @import url('./font.css');
 @import url('./variable.css');
+@import url('./activity.css');
 
 .modal{
   position: fixed;
   z-index: 10;
   background-color: rgba(0,0,0,0.9);
   inset: 0;
-  /* display: none; */
   overflow: auto;
 }
 .modal_content{
   background-color: var(--white);
   position: fixed;
   bottom: 0px; right: 0; left: 0;
-  /* display: none; */
 }
 /* for modal with activity button */
 .modal_content .activity{
@@ -44,7 +43,6 @@
   width: 60px;
   background-position: center;
   background-repeat: no-repeat;
-  margin-right: 1.25rem;
 }
 .modal_list{
   padding: .5rem 1.5rem 3rem;
@@ -57,7 +55,7 @@
 li:nth-child(-n+3) .modal_img{
   background-size: 100px;
 }
-li:nth-child(n+3) .modal_img{
+li:nth-child(n+4) .modal_img{
   background-size: 100px, cover;
 }
 li:nth-child(1) .modal_img{
@@ -71,6 +69,7 @@ li:nth-child(2) .modal_img{
 li:nth-child(3) .modal_img{
   background-image: url('../img/spag.png');
   background-color: var(--blue-600);
+  transition: all .37s;
 }
 li:nth-child(4) .modal_img{
   background-image: url('../img/port-domenic.png'), url('../img/Rectangle.png');
@@ -91,18 +90,15 @@ li:nth-child(6) .modal_img{
   color: var(--gray);
   line-height: 25px;
 }
-
-.food{
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: var(--blue-600);
+.modal_img-desc{
+  margin-left: 1.25rem;
+}
+.food_gastonton{
+  border-radius: 0;
   width: 100%;
   height: 350px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 520px;
+  background-size: 520px !important;
+  transform: translateY(-50%);
+  top: 50% !important;
 }
-.modal_food{
-  display: none;
-}
+
